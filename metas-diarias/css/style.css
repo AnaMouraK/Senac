@@ -1,0 +1,109 @@
+body{
+    background-color: lightsteelblue;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+section:not(#lista) h2{
+    color: #fff;
+}
+#formulario, #lista {
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 10 10 10px #000000;
+    margin-top: 20px;
+    border: 1px #000000;    
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    background-color: hsl(229, 46%, 28%);
+    flex: 1;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 5px 10px #000000;
+    
+}
+input, textarea, select, button {
+    width: auto;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 10px;
+    display: flex;
+}
+button{
+    background-color:hwb(207 24% 25%);
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    justify-content: center;
+}
+button:hover{
+    background-color: oklab(32.233000000000004% -0.01028 -0.11039); 
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+    background-color: hsl(229, 46%, 28%);
+    color: #fff;
+}
+h1{
+    text-align: center;
+}
+#lista-metas li {
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    list-style: none;
+}
+.baixa{
+    color: green;
+}
+.media {
+    color: orange;
+}
+.alta {
+    color: red;
+}
+.btn bnt-concluir{
+    background-color: hsl(199, 83%, 57%);
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+.btn btn-remover{
+    background-color: #f02727;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+@media screen and (max-width: 768px) {
+    header h1{
+        font-size: 35px;
+        display: flex;
+        justify-content: space-between;
+    }
+    form{
+        width: 70%;
+    }
+    #lista{
+        width: 70%;
+    }
+}

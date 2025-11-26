@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: hwb(0 20% 79%);
+}
+
+h1 {
+    color: lab(100% 0.01 -0.01);
+    text-align: center;
+}
+
+input[type="number"], select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; 
+}
+
+button {
+    background-color: hsl(271, 93%, 58%); 
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: hsl(283, 100%, 35%);
+}
+
+#resultado {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-height: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.verde-desconto {
+    color: green;
+    border-color: green;
+    background-color: #e6ffe6;
+}
+
+.vermelho-acrescimo {
+    color: red;
+    border-color: red;
+    background-color: #ffe6e6;
+}
+
+.laranja-sem-desconto {
+    color: orange;
+    border-color: orange;
+    background-color: #fff0e6;
+}
+label{
+    color:aliceblue;
+}

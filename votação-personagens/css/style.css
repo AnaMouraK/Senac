@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=DynaPuff:wght@400..700&family=Italianno&family=Rochester&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.dynapuff {
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+body{
+    background-image: url(../img/fundoultio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+header{
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    margin-top: 20px;
+    text-shadow: 3px 3px 3px rgb(rgb(0, 0, 0));
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    font-family: "DynaPuff", sans-serif;
+    text-shadow: 3px 3px 3px black;
+    font-size: 50px;
+}
+.container{
+    margin: 20px;
+    margin-top: 100px;
+    background-color: #00000083;
+    padding: 60px;
+    width: 300px;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.container select{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: beige;
+    border: 2px solid white;
+}
+button{
+    padding: 15px;
+    border-radius: 10px;
+    background-color: hsl(49, 85%, 52%);
+    border: none;
+    cursor: pointer;
+    transition: 0.8s;
+}
+button:hover{
+    opacity: 0.5;
+    color: black;
+}
+footer{
+    background-color: #00000057;
+    color: white;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+}
+#ranking{
+    padding: 40px;
+    border-radius: 10px;
+    background-color: hsla(0, 0%, 0%, 0.397);
+    border: 2px solid white;
+    width: 300px;
+    height: auto;
+}
+#lista-ranking{
+    list-style: none;
+}
+li{
+    color: hwb(39 9% 2%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 3px 3px 3px black;
+}
+.lider{
+    color: lab(35.47% 58.22 46.37);
+    font-size: 30px;
+}
+@media  screen and (max-widht: 768px) {
+    body{
+        background-image: url(../img/bojackmediascreen.jpg);
+        background-size: auto;
+    }
+    h1{
+        text-align: center;
+        font-size: 20px;
+    }
+    .container{
+        padding: 20px;
+    }
+    #ranking{
+        padding: 30px;
+    }
+}
