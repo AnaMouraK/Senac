@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/headers.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div id="login-modal" class="modal">
+        <h2>Acesso do Usuário</h2>
+        <form id="login-form">
+            <input type="text" placeholder="Usuário" required>
+            <input type="password" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+            <p id="login-status"></p>
+        </form>
+    </div>
+  <!--Cabeçalho-->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark px-3">
+      <img class="logo" src="img/Logo.png">
+      <h1>Clik'N'Rock</h1>
+      <input type="text" id="pesquisa" placeholder="Digite o produto">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"> </span>
+      </button>
+      <div id="navbarNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index.html"> Início </a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#servicos" id="servicosDropdown" role="button"
+              data-bs-toggle="dropdown"> Serviços </a>
+            <ul class="dropdown-menu">
+              <li> <a class="dropdown-item" href="#"> Investimentos </a></li>
+              <li> <a class="dropdown-item" href="#"> Planejamento </a></li>
+              <li> <a class="dropdown-item" href="#"> Aposentadoria </a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#contato"> Ajuda </a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato"> Contato </a></li>
+
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div id="carouselFinancas" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item align-items-center justify-content-center active">
+          <img src="./img/img-carrosel1.jpg" class="d-blok w-100" alt="Finanças pessoais">
+        </div>
+        <div class="carousel-item align-items-center justify-content-center">
+          <img src="img/bands-banner.jpg" class="d-blok w-100" alt="Investimentos">
+        </div>
+        <div class="carousel-item align-items-center justify-content-center">
+          <img src="img/img-carrosel2.jpg" class="d-blok w-100" alt="Investimentos">
+        </div>
+        <div class="carousel-item align-items-center justify-content-center">
+          <img src="img/promo-banner.jpg" class="d-blok w-100" alt="Investimentos">
+        </div>
+      </div>
+      <buton class="carousel-control-prev" type="button" data-bs-target="#carouselFinancas" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"> </span>
+      </buton>
+      <buton class="carousel-control-next">
+        <span class="carousel-control-next-icon" type="button" data-bs-target="#carouselFinancas"
+          data-bs-slide="next"></span>
+      </buton>
+    </div>
+  </section>
+  <button id="modoEscuro">🌙</button>
+  <section>
+    <h2>Roupas</h2>
+    <div id="carrosel1">
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="card col-md-2">
+                <div class="produto">
+                  <img class="img-card" src="Jaqueta3.jpg">
+                  <h3>Camiseta da ACDC</h3>
+                  <p>R$ 72,90</p>
+                  <a href="jaqueta3.html"><button class="button-card" type="submit">Comprar</button></a>
+                </div>
+              </div>
+              <div class="card col-md-2">
+                <div class="produto">
+                  <img class="img-card" src="jaqueta4.jpg">
+                  <h3>Camiseta da ACDC</h3>
+                  <p>R$ 72,90</p>
+                  <a href="jaqueta4.html"><button class="button-card" type="submit">Comprar</button></a>
+                </div>
+              </div>
+              <div class="card col-md-2">
+                <div class="produto">
+                  <img class="img-card" src="Moletom1.jpg">
+                  <h3>Camiseta da ACDC</h3>
+                  <p>R$ 72,90</p>
+                  <a href="Moletom1.html"><button class="button-card" type="submit">Comprar</button></a>
+                </div>
+              </div>
+              <div class="card col-md-2">
+                <div class="produto">
+                  <img class="img-card" src="Moletom2.jpg">
+                  <h3>Camiseta da ACDC</h3>
+                  <p>R$ 72,90</p>
+                  <a href="Moletom2.html"><button class="button-card" type="submit">Comprar</button></a>
+                </div>
+              </div>
+              <div class="card col-md-2">
+                <div class="produto">
+                  <img class="img-card" src="Camiseta-Kiss1.jpg">
+                  <h3>Camiseta da ACDC</h3>
+                  <p>R$ 72,90</p>
+                  <a href="camiseta-kiss1.html"><button class="button-card" type="submit">Comprar</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="card col-md-2">
+                <div class="produto">
+                  <img class="img-card" src="camiseta2.jpg">
+                  <h3>Camiseta da ACDC</h3>
+                  <p>R$ 72,90</p>
+                  <a href="camiseta2.html"><button class="button-card" type="submit">Comprar</button></a>
+                </div>
+              </div>
+              <div class="card col-md-2">
+                <div class="produto">
+                  <img class="img-card" src="camiseta3.jpg">
+                  <h3>Camiseta da ACDC</h3>
+                  <p>R$ 72,90</p>
+                  <a href="camiseta3.html"><button class="button-card" type="submit">Comprar</button></a>
+                </div>
+              </div>
+              <div class="card col-md-2">
+                <div class="produto">
+                  <img class="img-card" src="camiseta4.jpg">
+                  <h3>Camiseta da ACDC</h3>
+                  <p>R$ 72,90</p>
+                  <a href="camiseta4.html"><button class="button-card" type="submit">Comprar</button></a>
+                </div>
+              </div>
+              <div class="card col-md-2">
+                <div class="produto">
+                  <img class="img-card" src="camiseta5.jpg">
+                  <h3>Camiseta da ACDC</h3>
+                  <p>R$ 72,90</p>
+                  <a href="camiseta5.html"><button class="button-card" type="submit">Comprar</button></a>
+                </div>
+              </div>
+              <div class="card col-md-2">
+                <div class="produto">
+                  <img class="img-card" src="Moletom3.jpg">
+                  <h3>Camiseta da ACDC</h3>
+                  <p>R$ 72,90</p>
+                  <a href="Moletom3.html"><button class="button-card" type="submit">Comprar</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="card col-md-2">
+                <div class="produto">
+                  <img class="img-card" src="Jaqueta2.jpg">
+                  <h3>Camiseta da ACDC</h3>
+                  <p>R$ 72,90</p>
+                  <a href="Jaqueta2.html"><button class="button-card" type="submit">Comprar</button></a>
+                </div>
+              </div>
+              <div class="card col-md-2">
+                <div class="produto">
+                  <img class="img-card" src="Jaqueta1.jpg">
+                  <h3>Camiseta da ACDC</h3>
+                  <p>R$ 72,90</p>
+                  <a href="Jaqueta1.html"><button class="button-card" type="submit">Comprar</button></a>
+                </div>
+              </div>
+              <div class="card col-md-2">
+                <div class="produto">
+                  <img class="img-card" src="Moletom4.jpg">
+                  <h3>Camiseta da ACDC</h3>
+                  <p>R$ 72,90</p>
+                  <a href="Moletom4.html"><button class="button-card" type="submit">Comprar</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div id="carrosel1-mob">
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active card">
+            <div class="produto">
+              <img class="img-card" src="Jaqueta3.jpg">
+              <h3>Camiseta da ACDC</h3>
+              <p>R$ 72,90</p>
+              <a href="jaqueta3.html"><button class="button-card" type="submit">Comprar</button></a>
+            </div>
+          </div>
+          <div class="carousel-item card">
+            <div class="produto">
+              <img class="img-card" src="Jaqueta2.jpg">
+              <h3>Camiseta da ACDC</h3>
+              <p>R$ 72,90</p>
+              <a href="Jaqueta2.html"><button class="button-card" type="submit">Comprar</button></a>
+            </div>
+          </div>
+          <div class="carousel-item card">
+            <div class="produto">
+              <img class="img-card" src="jaqueta4.jpg">
+              <h3>Camiseta da ACDC</h3>
+              <p>R$ 72,90</p>
+              <a href="jaqueta4.html"><button class="button-card" type="submit">Comprar</button></a>
+            </div>
+          </div>
+          <div class="carousel-item card">
+            <div class="produto">
+              <img class="img-card" src="Jaqueta1.jpg">
+              <h3>Camiseta da ACDC</h3>
+              <p>R$ 72,90</p>
+              <a href="Jaqueta1.html"><button class="button-card" type="submit">Comprar</button></a>
+            </div>
+          </div>
+          <div class="carousel-item card">
+            <div class="produto">
+              <img class="img-card" src="Camiseta-Kiss1.jpg">
+              <h3>Camiseta da ACDC</h3>
+              <p>R$ 72,90</p>
+              <a href="Camiseta-Kiss1.jpg"><button class="button-card" type="submit">Comprar</button></a>
+            </div>
+          </div>
+          <div class="carousel-item card">
+            <div class="produto">
+              <img class="img-card" src="camiseta2.jpg">
+              <h3>Camiseta da ACDC</h3>
+              <p>R$ 72,90</p>
+              <a href="camiseta2.html"><button class="button-card" type="submit">Comprar</button></a>
+            </div>
+          </div>
+          <div class="carousel-item card">
+            <div class="produto">
+              <img class="img-card" src="camiseta3.jpg">
+              <h3>Camiseta da ACDC</h3>
+              <p>R$ 72,90</p>
+              <a href="camiseta3.html"><button class="button-card" type="submit">Comprar</button></a>
+            </div>
+          </div>
+          <div class="carousel-item card">
+            <div class="produto">
+              <img class="img-card" src="camiseta4.jpg">
+              <h3>Camiseta da ACDC</h3>
+              <p>R$ 72,90</p>
+              <a href="camiseta4.html"><button class="button-card" type="submit">Comprar</button></a>
+            </div>
+          </div>
+          <div class="carousel-item card">
+            <div class="produto">
+              <img class="img-card" src="camiseta5.jpg">
+              <h3>Camiseta da ACDC</h3>
+              <p>R$ 72,90</p>
+              <a href="camiseta5.jpg"><button class="button-card" type="submit">Comprar</button></a>
+            </div>
+          </div>
+          <div class="carousel-item card">
+            <div class="produto">
+              <img class="img-card" src="Moletom1.jpg">
+              <h3>Camiseta da ACDC</h3>
+              <p>R$ 72,90</p>
+              <a href="Moletom1.html"><button class="button-card" type="submit">Comprar</button></a>
+            </div>
+          </div>
+          <div class="carousel-item card">
+            <div class="produto">
+              <img class="img-card" src="Moletom2.jpg">
+              <h3>Camiseta da ACDC</h3>
+              <p>R$ 72,90</p>
+              <a href="Moletom2.jpg"><button class="button-card" type="submit">Comprar</button></a>
+            </div>
+          </div>
+          <div class="carousel-item card">
+            <div class="produto">
+              <img class="img-card" src="Moletom3.jpg">
+              <h3>Camiseta da ACDC</h3>
+              <p>R$ 72,90</p>
+              <a href="moletom3.html"><button class="button-card" type="submit">Comprar</button></a>
+            </div>
+          </div>
+          <div class="carousel-item card">
+            <div class="produto">
+              <img class="img-card" src="Moletom4.jpg">
+              <h3>Camiseta da ACDC</h3>
+              <p>R$ 72,90</p>
+              <a href="Moletom4.html"><button class="button-card" type="submit">Comprar</button></a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2>Acessórios</h2>
+    <div id="carrosel2">
+      <div id="myCarousel1" class="carousel slide mb-6" data-bs-ride="carousel2">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="card col-md-2">
+                <div class="produto">
+                  <img class="img-card" src="bandana1.jpg">
+                  <h3>Camiseta da ACDC</h3>
+                  <p>R$ 72,90</p>
+                  <a href="bandana1.html"><button class="button-card" type="submit">Comprar</button></a>
+                </div>
+              </div>
+              <div class="card col-md-2">
+                <div class="produto">
+                  <img class="img-card" src="Bracelete1.jpg">
+                  <h3>Camiseta da ACDC</h3>
+                  <p>R$ 72,90</p>
+                  <a href="bracelete1.html"><button class="button-card" type="submit">Comprar</button></a>
+                </div>
+              </div>
+              <div class="card col-md-2">
+                <div class="produto">
+                  <img class="img-card" src="Brinco1.jpg">
+                  <h3>Camiseta da ACDC</h3>
+                  <p>R$ 72,90</p>
+                  <a href="brinco1.html"><button class="button-card" type="submit">Comprar</button></a>
+                </div>
+              </div>
+              <div class="card col-md-2">
+                <div class="produto">
+                  <img class="img-card" src="Cinto rock1.jpg">
+                  <h3>Camiseta da ACDC</h3>
+                  <p>R$ 72,90</p>
+                  <a href="cinto1.html"><button class="button-card" type="submit">Comprar</button></a>
+                </div>
+              </div>
+              <div class="card col-md-2">
+                <div class="produto">
+                  <img class="img-card" src="caneca1.jpg">
+                  <h3>Camiseta da ACDC</h3>
+                  <p>R$ 72,90</p>
+                  <a href="caneca1.html"><button class="button-card" type="submit">Comprar</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="card col-md-2">
+                <div class="produto">
+                  <img class="img-card" src="Chaveiro1.jpg">
+                  <h3>Camiseta da ACDC</h3>
+                  <p>R$ 72,90</p>
+                  <a href="Chaveiro1.html"><button class="button-card" type="submit">Comprar</button></a>
+                </div>
+              </div>
+              <div class="card col-md-2">
+                <div class="produto">
+                  <img class="img-card" src="Colar1.jpg">
+                  <h3>Camiseta da ACDC</h3>
+                  <p>R$ 72,90</p>
+                  <a href="Colar1.html"><button class="button-card" type="submit">Comprar</button></a>
+                </div>
+              </div>
+              <div class="card col-md-2">
+                <div class="produto">
+                  <img class="img-card" src="Corrente1.jpg">
+                  <h3>Camiseta da ACDC</h3>
+                  <p>R$ 72,90</p>
+                  <a href="Corrente1.html"><button class="button-card" type="submit">Comprar</button></a>
+                </div>
+              </div>
+              <div class="card col-md-2">
+                <div class="produto">
+                  <img class="img-card" src="new rocks1.jpg">
+                  <h3>Camiseta da ACDC</h3>
+                  <p>R$ 72,90</p>
+                  <a href="newrocks.html"><button class="button-card" type="submit">Comprar</button></a>
+                </div>
+              </div>
+              <div class="card col-md-2">
+                <div class="produto">
+                  <img class="img-card" src="Vinil1.jpg">
+                  <h3>Camiseta da ACDC</h3>
+                  <p>R$ 72,90</p>
+                  <a href="Vinil1.html"><button class="button-card" type="submit">Comprar</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="card col-md-2">
+                <div class="produto">
+                  <img class="img-card" src="All star1.jpg">
+                  <h3>Camiseta da ACDC</h3>
+                  <p>R$ 72,90</p>
+                  <a href="allstar1.html"><button class="button-card" type="submit">Comprar</button></a>
+                </div>
+              </div>
+              <div class="card col-md-2">
+                <div class="produto">
+                  <img class="img-card" src="All star2.jpg">
+                  <h3>Camiseta da ACDC</h3>
+                  <p>R$ 72,90</p>
+                  <a href="allstar2.html"><button class="button-card" type="submit">Comprar</button></a>
+                </div>
+              </div>
+              <div class="card col-md-2">
+                <div class="produto">
+                  <img class="img-card" src="All star3.jpg">
+                  <h3>Camiseta da ACDC</h3>
+                  <p>R$ 72,90</p>
+                  <a href="allstar3.html"><button class="button-card" type="submit">Comprar</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel1" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div id="carrosel2-mob">
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active card">
+            <div class="produto">
+              <img class="img-card" src="All star1.jpg">
+              <h3>Camiseta da ACDC</h3>
+              <p>R$ 72,90</p>
+              <a href="allstar1.html"><button class="button-card" type="submit">Comprar</button></a>
+            </div>
+          </div>
+          <div class="carousel-item card">
+            <div class="produto">
+              <img class="img-card" src="All star2.jpg">
+              <h3>Camiseta da ACDC</h3>
+              <p>R$ 72,90</p>
+              <a href="allstar2.html"><button class="button-card" type="submit">Comprar</button></a>
+            </div>
+          </div>
+          <div class="carousel-item card">
+            <div class="produto">
+              <img class="img-card" src="All star3.jpg">
+              <h3>Camiseta da ACDC</h3>
+              <p>R$ 72,90</p>
+              <a href="allstar3.html"><button class="button-card" type="submit">Comprar</button></a>
+            </div>
+          </div>
+          <div class="carousel-item card">
+            <div class="produto">
+              <img class="img-card" src="bandana1.jpg">
+              <h3>Camiseta da ACDC</h3>
+              <p>R$ 72,90</p>
+              <a href="bandana1.html"><button class="button-card" type="submit">Comprar</button></a>
+            </div>
+          </div>
+          <div class="carousel-item card">
+            <div class="produto">
+              <img class="img-card" src="Bracelete1.jpg">
+              <h3>Camiseta da ACDC</h3>
+              <p>R$ 72,90</p>
+              <a href="bracelete1.html"><button class="button-card" type="submit">Comprar</button></a>
+            </div>
+          </div>
+          <div class="carousel-item card">
+            <div class="produto">
+              <img class="img-card" src="Brinco1.jpg">
+              <h3>Camiseta da ACDC</h3>
+              <p>R$ 72,90</p>
+              <a href="brinco1.html"><button class="button-card" type="submit">Comprar</button></a>
+            </div>
+          </div>
+          <div class="carousel-item card">
+            <div class="produto">
+              <img class="img-card" src="caneca1.jpg">
+              <h3>Camiseta da ACDC</h3>
+              <p>R$ 72,90</p>
+              <a href="caneca1.html"><button class="button-card" type="submit">Comprar</button></a>
+            </div>
+          </div>
+          <div class="carousel-item card">
+            <div class="produto">
+              <img class="img-card" src="Chaveiro1.jpg">
+              <h3>Camiseta da ACDC</h3>
+              <p>R$ 72,90</p>
+              <a href="Chaveiro1.html"><button class="button-card" type="submit">Comprar</button></a>
+            </div>
+          </div>
+          <div class="carousel-item card">
+            <div class="produto">
+              <img class="img-card" src="Cinto rock1.jpg">
+              <h3>Camiseta da ACDC</h3>
+              <p>R$ 72,90</p>
+              <a href="cinto1.html"><button class="button-card" type="submit">Comprar</button></a>
+            </div>
+          </div>
+          <div class="carousel-item card">
+            <div class="produto">
+              <img class="img-card" src="Colar1.jpg">
+              <h3>Camiseta da ACDC</h3>
+              <p>R$ 72,90</p>
+              <a href="Colar1.html"><button class="button-card" type="submit">Comprar</button></a>
+            </div>
+          </div>
+          <div class="carousel-item card">
+            <div class="produto">
+              <img class="img-card" src="Corrente1.jpg">
+              <h3>Camiseta da ACDC</h3>
+              <p>R$ 72,90</p>
+              <a href="Corrente1.html"><button class="button-card" type="submit">Comprar</button></a>
+            </div>
+          </div>
+          <div class="carousel-item card">
+            <div class="produto">
+              <img class="img-card" src="new rocks1.jpg">
+              <h3>Camiseta da ACDC</h3>
+              <p>R$ 72,90</p>
+              <a href="newrocks.html"><button class="button-card" type="submit">Comprar</button></a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  </main>
+  <footer id="contato">
+    <div id="footer_content">
+      <div id="footer_contacts">
+        <img class="logo" src="img/logo.png">
+        <ul class="footer-list">
+          <li>
+            <a href="#" class="footer-link">Luís Câmara</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Bryan Willian</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Ana Moura</a>
+          </li>
+          <div id="footer_social_media">
+            <a href="#" class="footer-link" id="instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="footer-link" id="facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="footer-link" id="whatsapp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </ul>
+      </div>
+      <ul class="footer-list">
+        <li>
+          <h3>Conta</h3>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Meus pedidos</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Rastrear pedido</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Área do revendedor</a>
+        </li>
+      </ul>
+      <ul class="footer-list">
+        <li>
+          <h3>Ajuda</h3>
+        </li>
+        <li>
+          <a href="#" class="footer-link">FAQ</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Troca e devoluções</a>
+        </li>
+        <a href="#" class="footer-link">Entre em contato</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Termos e condições</a>
+        </li>
+        <li>
+        <li>
+          <a href="#" class="footer-link">Política de privacidade</a>
+        </li>
+      </ul>
+      <div id="footer_subscribe">
+        <h3>Inscrever-se</h3>
+        <p>
+          Insira seu e-mail para receber notificações sobre nossas novidades:
+        </p>
+        <div id="input_group">
+          <input type="email" id="email">
+          <button>
+            <i class="fa-regular fa-envelope"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="footer_copyright">
+      &#169
+      2025 all copyright reserved.
+    </div>
+  </footer>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
