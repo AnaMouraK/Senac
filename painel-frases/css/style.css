@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Italianno&family=Rochester&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-image:linear-gradient(lch(58.49% 69.09 14.48), lch(75.44% 46.69 330.44),lch(58.89% 72.23 359.28));
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-family: "Italianno", cursive;
+    font-size: 70px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 15PX;
+}
+.container{
+    width: 70%;
+    height: 300px;
+    background-color: antiquewhite;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    border-radius: 20px;
+    justify-content: center;
+    margin-top: 30px;
+    text-align: center;
+}
+button{
+    margin: 0 auto 10px auto;
+    display: flex;
+    background-color: lightsalmon;
+    transition: 0.2s;
+    width: 150px;
+    height: 30px;
+    border-radius: 8px;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+button:hover{
+    opacity: 0.7;
+}
+footer{
+    background-color: lab(29.39% 34.08 -4.42);
+    color: aliceblue;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+.preenchedor{
+    height: 20%;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    text-align: center;
+}
+@media screen and (max-widht: 768px) {
+    h1{
+        font-size: 40px;
+    }
+    .container{
+        width: 80%;
+        height: 300px;
+    }
+}
